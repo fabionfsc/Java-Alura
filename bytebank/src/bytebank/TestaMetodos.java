@@ -12,6 +12,12 @@ public class TestaMetodos {
 		
 		Conta contaDoIgor = new Conta();
 		
-		conta
+		contaDoIgor.deposita(1500);
+		
+		contaDoFabio.titular = "Fabio Silva";
+		contaDoIgor.titular = "Igor Eger";
+		
+		System.out.println(contaDoIgor.titular + " & " + contaDoFabio.titular);
+
 	}
 }
