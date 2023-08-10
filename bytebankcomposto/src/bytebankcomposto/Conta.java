@@ -3,7 +3,7 @@ package bytebankcomposto;
 public class Conta {
 	int agencia;
 	int conta;
-	double saldo;
+	private double saldo;
 	Cliente titular;
 
 	public void deposita(double valor) {
@@ -27,7 +27,7 @@ public class Conta {
 		return false;
 	}
 	
-	public double mostraSaldo() {
+	public double getSaldo() {
 		return this.saldo;
 	}
 }
