@@ -1,9 +1,9 @@
 package bytebankcomposto;
 
 public class Conta {
+	double saldo;
 	int agencia;
-	int conta;
-	private double saldo;
+	int numero;
 	Cliente titular;
 
 	public void deposita(double valor) {

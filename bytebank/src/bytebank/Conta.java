@@ -1,9 +1,9 @@
 package bytebank;
 
 public class Conta {
-	int agencia;
-	int conta;
 	double saldo;
+	int agencia;
+	int numero;
 	String titular;
 
 	public void deposita(double valor) {
