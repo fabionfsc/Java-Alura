@@ -42,4 +42,12 @@ public class Conta {
 	public int getAgencia() {
 		return this.agencia;
 	}
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
 }
