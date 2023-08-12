@@ -13,7 +13,7 @@ public class TestaGetESet {
 		// conta.titular = cliente;
 
 		conta.setTitular(fabio);
-		
+
 		fabio.setNome("Fábio");
 	}
 }

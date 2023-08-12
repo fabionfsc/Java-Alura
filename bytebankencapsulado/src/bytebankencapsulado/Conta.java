@@ -26,28 +26,32 @@ public class Conta {
 		}
 		return false;
 	}
-	
+
 	public double getSaldo() {
 		return this.saldo;
 	}
-	
+
 	public int getNumero() {
 		return this.numero;
 	}
-	
+
 	public void setNumero(int novoNumero) {
-		this.numero = novoNumero; 
+		this.numero = novoNumero;
 	}
-	
+
 	public int getAgencia() {
 		return this.agencia;
 	}
-	
+
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
-	
+
 	public Cliente getTitular() {
 		return titular;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
 	}
 }
