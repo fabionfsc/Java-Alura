@@ -5,6 +5,14 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total;
+	
+	public Conta() {
+		Conta.total++;
+		System.out.println("O total de contas é de " + total);
+		
+		
+	}
 
 	public void deposita(double valor) {
 		saldo = saldo + valor;
