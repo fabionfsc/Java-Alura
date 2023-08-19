@@ -1,17 +1,10 @@
 package bytebankherdado;
 
-public class Administrador extends Funcionario implements Autenticavel {
-	
-    private int senha;
-
-	@Override
-	public double getBonificacao() {
-		return 50;
-	}
+public class Cliente implements Autenticavel {
 
 	private AutenticacaoUtil autenticador;
 	
-	public Administrador() {
+	public Cliente() {
 		this.autenticador = new AutenticacaoUtil();
 	}
 
