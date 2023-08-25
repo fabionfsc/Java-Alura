@@ -9,7 +9,11 @@ public class TesteSaca {
 		
 		System.out.println(cc.getSaldo());
 		
-		cc.saca(1001);
+		try {
+			cc.saca(1001);
+		} catch (SaldoInsuficienteException ex) {
+			ex.getMessage();
+		}
 		
 		System.out.println(cc.getSaldo());
 		
