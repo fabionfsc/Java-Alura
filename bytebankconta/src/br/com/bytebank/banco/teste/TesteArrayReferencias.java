@@ -7,8 +7,7 @@ import br.com.bytebank.banco.modelo.Conta;
 public class TesteArrayReferencias {
 
 	public static void main(String[] args) throws SaldoInsuficienteException {
-		
-		
+
 		Conta[] contas = new ContaCorrente[5];
 		ContaCorrente cc1 = new ContaCorrente(111, 222);
 		
