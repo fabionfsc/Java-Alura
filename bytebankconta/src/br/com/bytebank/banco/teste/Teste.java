@@ -1,13 +1,13 @@
 package br.com.bytebank.banco.teste;
 
 import br.com.bytebank.banco.modelo.*;
-import br.com.bytebank.banco.modelo.GuardadorDeReferencias;
+import br.com.bytebank.banco.modelo.GuardadorDeContas;
 
 public class Teste {
 
 	public static void main(String[] args) {
 		
-		GuardadorDeReferencias guardador = new GuardadorDeReferencias();
+		GuardadorDeContas guardador = new GuardadorDeContas();
 		
 		Conta ccref = new ContaCorrente(100, 200);
 		
@@ -17,8 +17,12 @@ public class Teste {
 		
 		guardador.adiciona(ccref2);
 		
-		System.out.println();
-
+		int tamanho = guardador.getQuantidadeDeElementos();
+		System.out.println(tamanho);
+		
+		Conta ref = guardador.getReferencia(1);
+		
+		System.out.println(ref.getNumero());
 	}
 
 }
