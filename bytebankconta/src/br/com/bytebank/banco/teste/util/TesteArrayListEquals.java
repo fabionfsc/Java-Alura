@@ -7,7 +7,7 @@ public class TesteArrayListEquals {
 
 	public static void main(String[] args) {
 
-		//Generics
+		// Generics
 		ArrayList<Conta> lista = new ArrayList<Conta>();
 
 		Conta ccref = new ContaCorrente(100, 200);
@@ -15,11 +15,17 @@ public class TesteArrayListEquals {
 
 		Conta ccref2 = new ContaCorrente(101, 201);
 		lista.add(ccref2);
+
+		Conta ccref3 = new ContaCorrente(101, 201);
 		
 		boolean verifica = lista.contains(ccref2);
-		
-		System.out.println(verifica);
-		
+
+		if (verifica == true) {
+			System.out.println("A conta existe");
+		} else {
+			System.out.println("A conta não existe");
+		}
+
 		for (Object conta : lista) {
 			System.out.println(conta);
 		}

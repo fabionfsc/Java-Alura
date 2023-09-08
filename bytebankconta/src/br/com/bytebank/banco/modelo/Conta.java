@@ -18,7 +18,8 @@ public abstract class Conta {
 
 	public void saca(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor) {
-			throw new SaldoInsuficienteException("Saldo insuficiente. Seu saldo é de: " + this.saldo + " Valor solicitado: " + valor);
+			throw new SaldoInsuficienteException(
+					"Saldo insuficiente. Seu saldo é de: " + this.saldo + " Valor solicitado: " + valor);
 		} else {
 			this.saldo -= valor;
 		}
@@ -56,4 +57,5 @@ public abstract class Conta {
 	public void setAgencia(int agencia) {
 		this.agencia = agencia;
 	}
+
 }
